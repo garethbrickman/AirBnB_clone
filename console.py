@@ -20,7 +20,6 @@ class HBNBCommand(cmd.Cmd):
 
     " ----- CLI basic functionality ----- "
 
-    intro = 'HBNB Command Line Interpreter. Type help or ? to list commands.\n'
     prompt = '(hbnb) '
 
     def do_EOF(self, arg):
