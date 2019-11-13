@@ -111,9 +111,9 @@ class HBNBCommand(cmd.Cmd):
 
         for key, value in all_objs.items():
             new_list.append(value.__str__())
-            for i in new_list:
-                new_list2.append(str(i))
-            print(new_list2)
+        for i in new_list:
+            new_list2.append(str(i))
+        print(new_list2)
 
     def do_update(self, arg):
         """ Updates instance based on cls name/id by attribute, saves to JSON
