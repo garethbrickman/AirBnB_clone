@@ -5,7 +5,6 @@ import os
 from models.city import City
 from models.base_model import BaseModel
 import pep8
-City = city.City
 
 
 class TestCity(unittest.TestCase):
@@ -18,7 +17,7 @@ class TestCity(unittest.TestCase):
         """Testing the attributes of City"""
         self.assertTrue(hasattr(self.city, "created_at"))
         self.assertTrue(hasattr(self.city, "id"))
-        self.assertFalse(hasattr(self.city, "updated_at"))
+        self.assertTrue(hasattr(self.city, "updated_at"))
         self.assertFalse(hasattr(self.city, "random_attr"))
         self.assertTrue(hasattr(self.city, "name"))
         self.assertEqual(self.city.__class__.__name__, "City")
@@ -36,9 +35,9 @@ class TestCity(unittest.TestCase):
 
     def test_city_module_docstring(self):
         """Test for the city.py module docstring"""
-        self.assertIsNot(city.__doc__, None,
+        self.assertIsNot(self.city.__doc__, None,
                          "city.py needs a docstring")
-        self.assertTrue(len(city.__doc__) >= 1,
+        self.assertTrue(len(self.city.__doc__) >= 1,
                         "city.py needs a docstring")
 
     def test_city_class_docstring(self):

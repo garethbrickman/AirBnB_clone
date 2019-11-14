@@ -17,7 +17,7 @@ class TestAmenity(unittest.TestCase):
         """Testing the attributes of Amenity"""
         self.assertTrue(hasattr(self.amenity, "created_at"))
         self.assertTrue(hasattr(self.amenity, "id"))
-        self.assertFalse(hasattr(self.amenity, "updated_at"))
+        self.assertTrue(hasattr(self.amenity, "updated_at"))
         self.assertFalse(hasattr(self.amenity, "random_attr"))
         self.assertTrue(hasattr(self.amenity, "name"))
         self.assertEqual(self.amenity.__class__.__name__, "Amenity")

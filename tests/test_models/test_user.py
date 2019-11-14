@@ -5,11 +5,10 @@ User test classes
 
 from datetime import datetime
 import inspect
-from models import user
+from models.user import User
 from models.base_model import BaseModel
 import pep8
 import unittest
-User = user.User
 
 
 class Test_UserModel(unittest.TestCase):
@@ -38,9 +37,9 @@ class Test_UserModel(unittest.TestCase):
         self.assertEqual(result.total_errors, 0,
                          "Found code style errors (and warnings).")
 
-    def test_to_dict_User(self):
-        """test if dictionary works"""
-        self.assertEqual('to_dict' in dir(self.user), True)
+    def test_subclass(self):
+        """test if User is a subclass"""
+        self.assertTrue(issubclass(self.model.__class__, BaseModel), True)
 
 if __name__ == "__main__":
     unittest.main()

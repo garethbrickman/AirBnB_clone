@@ -46,7 +46,7 @@ class TestPlace(unittest.TestCase):
         self.assertEqual(self.place.price_by_night, 0)
         self.assertEqual(self.place.latitude, 0.0)
         self.assertEqual(self.place.longitude, 0.0)
-        self.assertEqual(self.place.amenities, [''])
+        self.assertEqual(self.place.amenities, [])
 
     def test_str(self):
         """test that the str method has the correct output"""

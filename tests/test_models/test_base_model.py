@@ -5,7 +5,7 @@ Unit tests for base_model.py
 import unittest
 from models.base_model import BaseModel
 import datetime
-
+import pep8
 
 class TestBaseModel(unittest.TestCase):
     """
@@ -25,7 +25,7 @@ class TestBaseModel(unittest.TestCase):
         """Test the attributes of BaseModel"""
         self.assertTrue(hasattr(self.basemodel, "created_at"))
         self.assertTrue(hasattr(self.basemodel, "id"))
-        self.assertFalse(hasattr(self.basemodel, "updated_at"))
+        self.assertTrue(hasattr(self.basemodel, "updated_at"))
         self.assertFalse(hasattr(self.basemodel, "random_attr"))
         self.assertFalse(hasattr(self.basemodel, "name"))
         self.basemodel.name = "Betty"
