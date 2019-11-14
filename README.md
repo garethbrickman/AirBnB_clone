@@ -1,6 +1,6 @@
 # AirBnB_clone
 This is a simplified console for the back-end of the AirBnB Clone project.
-It is the first step in creating a full AirBnB Clone. This AirBnB_clone repository was created by BrandynReindel and Gareth Brickman.
+It is the first step in creating a full AirBnB Clone. This AirBnB_clone repository was created by Brandyn Reindel and Gareth Brickman.
 ### Repository Contents
 The repository contains the following files:
 |   **File**    |  **Decription**                       |
@@ -26,7 +26,6 @@ The repository contains the following files:
 ### Installation
 -   Clone this repository:  `git clone "https://github.com/brandynr/AirBnB_clone.git"`
 -   Access AirBnb directory:  `cd AirBnB_clone`
--
 ### Usage
 -   Run hbnb(interactively):
 ```python
