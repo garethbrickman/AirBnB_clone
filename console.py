@@ -37,6 +37,23 @@ class HBNBCommand(cmd.Cmd):
         """
         pass
 
+    def default(self, arg):
+        """ Overrides default unrecognized input line behaviour
+            Acts as a custom parser
+        """
+        cmds = {"show": self.do_show,
+                "destroy": self.do_destroy,
+                "all": self.do_all}
+
+        arg = (arg.replace("(", ".").replace(")", ".")
+                  .replace('"', "").replace(",", "").split("."))
+        try:
+            new_cmd = arg[0] + " " + arg[2]
+            new_func = cmds[arg[1]]
+            new_func(new_cmd)
+        except:
+            print("*** Unknown syntax")
+
     " ----- class instance functionality ----- "
 
     def do_create(self, arg):
