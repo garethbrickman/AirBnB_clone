@@ -3,26 +3,25 @@ This is a simplified console for the back-end of the AirBnB Clone project.
 It is the first step in creating a full AirBnB Clone. This AirBnB_clone repository was created by Brandyn Reindel and Gareth Brickman.
 ### Repository Contents
 The repository contains the following files:
-|   **File**    |  **Decription**                       |
-|---------------|---------------------------------------|
-| console.py   | entry point of the command interpreter           |
-| init_test.sh      | executes all the test files from tests folder        |
-| models/__init__.py | creates an instance of FileStorage |
-| models/amenity.py | class Amenity, inherits from BaseModel |
-| models/base_model.py | class BaseModel that defines all common attributes/methods for other classes |
-| models/city.py | class City, inherits from BaseModel |
-| models/place.py | class Place, inherits from BaseModel |
-| models/review.py | class Review, inherits from BaseModel |
-| models/state.py | class State, inherits from BaseModel |
-| models/user.py | class User, inherits from BaseModel |
-| models/engine/file_storage.py | class FileStorage, serializes instances to a JSON file and deserializes JSON file to instances |
-| tests/test_models/amenity_test.py | tests Amenity class |
-| tests/test_models/basemodel_test.py | tests BaseModel class |
-| tests/test_models/city_test.py | tests City class |
-| tests/test_models/place_test.py | tests Place class |
-| tests/test_models/review_test.py | tests Review class |
-| tests/test_models/state_test.py | tests State class |
-| tests/test_models/user_test.py | tests User class |
+-   **File**    |  **Decription** |
+-   console.py   | Command line interpreter file |
+-   models/__init__.py | Creates an instance of FileStorage |
+-   models/amenity.py | Class Amenity, inherits from BaseModel |
+-   models/base_model.py | Class BaseModel defines all attributesfor for other classes |
+-   models/city.py | Class City, inherits from BaseModel |
+-   models/place.py | Class Place, inherits from BaseModel |
+-   models/review.py | Class Review, inherits from BaseModel |
+-   models/state.py | Class State, inherits from BaseModel |
+-   models/user.py | Class User, inherits from BaseModel |
+-   models/engine/file_storage.py | Class FileStorage, serializes/deserializes instances to a JSON file
+-   tests/test_models/amenity_test.py | Tests Amenity class |
+-   tests/test_models/basemodel_test.py | Tests BaseModel class |
+-   tests/test_models/city_test.py | Tests City class |
+-   tests/test_models/place_test.py | Tests Place class |
+-   tests/test_models/review_test.py | Tests Review class |
+-   tests/test_models/state_test.py | Tests State class |
+-   tests/test_models/user_test.py | Tests User class |
+-   test/test_models/test_engine/test_file_storage.py | Tests file_storage file |
 ### Installation
 -   Clone this repository:  `git clone "https://github.com/brandynr/AirBnB_clone.git"`
 -   Access AirBnb directory:  `cd AirBnB_clone`
