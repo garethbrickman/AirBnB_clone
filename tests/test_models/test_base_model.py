@@ -7,6 +7,7 @@ from models.base_model import BaseModel
 import datetime
 import pep8
 
+
 class TestBaseModel(unittest.TestCase):
     """
     Test for BaseModel
